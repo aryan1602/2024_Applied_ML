@@ -1,0 +1,4 @@
+[core]
+    remote = remote_storage
+['remote "remote_storage"']
+    url = /home/aryan/Applied ML/2024_Applied_ML/dvc_remote_storage
