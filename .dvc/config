@@ -1,6 +1,4 @@
 [core]
     remote = myremote
-['remote "remote_storage"']
-    url = /home/aryan/Applied ML/2024_Applied_ML/dvc_remote_storage
 ['remote "myremote"']
     url = gdrive://1fble8_BKHllxWbelBYiYch-S-pXrEy1K
