@@ -1,0 +1,9 @@
+Module	statements   missing   excluded   coverage
+-------------------------------------------------
+app.py	       29	   2	      0	      93%
+score.py       32	   0	      0	     100%
+test.py	       76	   1	      0	      99%
+-------------------------------------------------
+Total	      137	   3	      0	      98%
+
+coverage.py v7.4.3, created at 2024-03-12 17:06 +0530
