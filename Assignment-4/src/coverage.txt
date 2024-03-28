@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.5, pytest-7.4.0, pluggy-1.0.0
+rootdir: /home/aryan/Applied ML/2024_Applied_ML/Assignment-4/src
+plugins: cov-4.1.0, anyio-3.5.0
+collected 1 item
+
+test.py .                                                                [100%]
+
+---------- coverage: platform linux, python 3.11.5-final-0 -----------
+Name       Stmts   Miss  Cover
+------------------------------
+app.py        28     28     0%
+score.py      32     32     0%
+test.py       24      1    96%
+------------------------------
+TOTAL         84     61    27%
+
+
+============================== 1 passed in 13.94s ==============================
