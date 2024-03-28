@@ -12,7 +12,7 @@ class TestDocker(unittest.TestCase):
         subprocess.run(["docker", "build", "-t", "my-flask-app", "."])
 
         # Run the Docker container in detached mode
-        subprocess.run(["docker", "run", "--name", "flask-app", "-d", "-p", "5000:5000", "my-flask-app"])
+        subprocess.run(["docker", "run", "--name", "pkmn", "-d", "-p", "5000:5000", "my-flask-app"])
 
         # Wait for the container to start
         time.sleep(2)
@@ -20,8 +20,8 @@ class TestDocker(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         # Close the Docker container
-        subprocess.run(["docker", "stop", "flask-app"])
-        subprocess.run(["docker", "rm", "flask-app"])
+        subprocess.run(["docker", "stop", "pkmn"])
+        subprocess.run(["docker", "rm", "pkmn"])
 
     def test_request_response(self):
         # Send a sample request to the Flask app
