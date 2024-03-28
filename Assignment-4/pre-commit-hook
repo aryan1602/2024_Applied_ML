@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Directory path where test.py file is located
+TEST_DIR="Assignment-4/src"
+
+# Run test.py before each commit to the local 'main' branch
+if [[ $(git rev-parse --abbrev-ref HEAD) == "main" ]]; then
+    echo "Running tests before commit..."
+    python "$TEST_DIR/test.py"
+    TEST_RESULT=$?
+    if [ $TEST_RESULT -ne 0 ]; then
+        echo "Tests failed. Commit aborted."
+        exit 1
+    else
+        echo "Tests passed. Proceeding with commit."
+    fi
+fi
+
